@@ -1,0 +1,155 @@
+/* Registration Styling */
+
+/* Global */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.headerContainer {
+  width: 100%;
+  background-color: var(--magenta);
+  padding: 30px 0;
+  text-align: center;
+}
+.contentContainer {
+  margin: 0 auto;
+  padding: 25px 40px;
+  width: 100%;
+  max-width: 625px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.radioForm {
+  margin-top: 30px;
+}
+.buttonContainer {
+  margin-top: 30px;
+}
+.dropdownWrapper {
+  flex: 1;
+}
+.privacyPolicyContainer {
+  padding: 0px 20%;
+  text-align: center;
+}
+.clickable {
+  cursor: pointer;
+}
+.centerText {
+  text-align: center;
+}
+.clickable {
+  cursor: pointer;
+}
+.displayNone {
+  display: none;
+}
+
+/* Verify Email */
+.verifyEmailContent {
+  text-align: center;
+  margin-top: 25px;
+}
+.verifyEmailContent p {
+  margin-bottom: 25px;
+}
+
+/* Personal Information */
+.autocompleteItems {
+  padding: 5px 0;
+}
+h3,
+.autocompleteItems p {
+  display: inline;
+}
+
+/* Social Profile */
+.userImageContainer {
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+  max-width: 625px;
+}
+
+/* Military Status */
+.ETSContainer {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.ETSdropdownWrapper {
+  width: 30%;
+}
+
+.rankDropdownWrapper {
+  margin-bottom: 40px;
+}
+
+/* Red Shirt */
+.imageContainer {
+  width: 100%;
+  height: auto;
+}
+.redShirtMotto {
+  text-align: center;
+}
+
+/* Get Red Shirt */
+.pickerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.sizeChartBtn {
+  position: relative;
+  top: 22px;
+  height: 27px;
+  padding: 0 30px;
+  cursor: pointer;
+}
+.paymentFormColumn {
+  display: inline-block;
+  width: 50%;
+}
+.paymentFormColumn:nth-of-type(1) {
+  padding-right: 20px;
+}
+.paymentFormColumn:nth-of-type(2) {
+  padding-left: 20px;
+}
+.radioButtonsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.errorMessage {
+  font-family: 'OpenSans-Bold';
+  font-size: 12px;
+  line-height: 11px;
+  color: var(--magenta);
+  text-transform: uppercase;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.link {
+  cursor: pointer;
+  color: var(--magenta);
+  font-weight: 500;
+}
+.legalVaiwerStatusSwitch {
+  margin: 20px 0 40px;
+}
+
+/* Order Confirmation */
+.redShirtMottoOrderConfirmation {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.emailMessage {
+  padding-top: 20px;
+}

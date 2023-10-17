@@ -1,0 +1,56 @@
+.rootContainer {
+  position: relative;
+  height: 100%;
+}
+
+.contentContainer {
+  padding: 40px;
+}
+
+.eventNameAndChapterContainer {
+  flex-direction: column;
+  flex: 1;
+}
+
+.chapterName {
+  margin-bottom: 20px;
+  color: var(--magenta);
+}
+
+.calendarContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.calendarContainer svg {
+  width: 20px;
+  height: 20px;
+  color: var(--magenta);
+  margin-right: 10px;
+}
+
+.timeInputsContainer {
+  display: flex;
+  flex: 1;
+}
+
+.stepsInput {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.inputMinutes {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.submitButtonWrapper {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .rootContainer {
+    padding-left: 0;
+    padding-bottom: 94px;
+  }
+}

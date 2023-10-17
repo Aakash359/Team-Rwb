@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "248550484407",
+    "firebase_url": "https://team-rwb-app.firebaseio.com",
+    "project_id": "team-rwb-app",
+    "storage_bucket": "team-rwb-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248550484407:android:debf55dd9d8b0f68",
+        "android_client_info": {
+          "package_name": "com.teamrwb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248550484407-5i7910rjp6ohpkdrpahqlhdlkiio1gig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamrwb",
+            "certificate_hash": "b59d6cd6b201875b79b8a4568f9f1de38a98760c"
+          }
+        },
+        {
+          "client_id": "248550484407-vfsva8csbb2in3h9h10f3sp4ibneeono.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamrwb",
+            "certificate_hash": "b8424cfcaa4626428097369804f3c795065a91d9"
+          }
+        },
+        {
+          "client_id": "248550484407-jvr2rprm7mhup9l4kkjaujr9qk8ana5q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamrwb",
+            "certificate_hash": "dff02fdbbd1ad96e1656b3f7f0ea06e1aacf7c13"
+          }
+        },
+        {
+          "client_id": "248550484407-t4k3bquoioko2i16vs431sjvecc0ietn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS8hJqgYZH3KlIx8_7Ac9lxorYnGqqkd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248550484407-t4k3bquoioko2i16vs431sjvecc0ietn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "248550484407-8qanbu8uvoqo2ffv4c1ntlvu6i2pnmqr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.teamrwb.TeamRWB"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

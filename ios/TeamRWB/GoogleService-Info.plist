@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>248550484407-8qanbu8uvoqo2ffv4c1ntlvu6i2pnmqr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.248550484407-8qanbu8uvoqo2ffv4c1ntlvu6i2pnmqr</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>248550484407-5i7910rjp6ohpkdrpahqlhdlkiio1gig.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC4bLR2XtTVarbUcTYyP94cfKAzRLGXtOc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>248550484407</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.teamrwb.TeamRWB</string>
+	<key>PROJECT_ID</key>
+	<string>team-rwb-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>team-rwb-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:248550484407:ios:04d994d78cab7cc4</string>
+	<key>DATABASE_URL</key>
+	<string>https://team-rwb-app.firebaseio.com</string>
+</dict>
+</plist>

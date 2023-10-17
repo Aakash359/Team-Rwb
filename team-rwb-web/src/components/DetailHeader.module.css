@@ -1,0 +1,44 @@
+.coverImgContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  overflow: hidden;
+}
+
+.coverImgContainer > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 8px 40px;
+}
+
+.navigation button {
+  /* this may not always work with our custom svgs. they sometimes expect props to set color, etc. */
+  color: var(--magenta);
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.navigation button:hover {
+  background-color: var(--grey40);
+}
+
+
+h1 {
+  color: var(--navy);
+  font-size: 24px;
+}

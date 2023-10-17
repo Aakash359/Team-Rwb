@@ -1,0 +1,136 @@
+.groupDetailsContainer {
+  width: 100%;
+  padding: 25px 40px;
+  border-bottom: 2px solid var(--grey8);
+}
+
+h1 {
+  color: var(--navy);
+  font-size: 24px;
+}
+
+.groupType {
+  margin: 4px 0 10px 0;
+  color: var(--magenta);
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.likeJoinContainer {
+  display: flex;
+  max-width: 60%;
+}
+
+.likeIconContainer {
+  background-color: var(--grey40);
+  width: 100px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px 0 0 6px;
+}
+
+.likedIconContainer {
+  background-color: var(--magenta);
+}
+
+.joinIconContainer {
+  background-color: var(--grey40);
+  width: 200px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-left: 2px;
+}
+
+.joinedIconContainer {
+  background-color: var(--grey40);
+  width: 140px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-left: 2px;
+}
+
+.joinIconContainer p {
+  font-weight: bold;
+  margin-left: 6px;
+  color: var(--grey80);
+}
+
+.joinedIconContainer {
+  background-color: var(--magenta);
+}
+
+.joinedIconContainer p {
+  color: var(--white);
+}
+
+.eventCountContainer {
+  background-color: var(--magenta);
+  width: 140px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-left: 2px;
+}
+
+.eventCountContainer p {
+  font-weight: bold;
+  margin-left: 6px;
+  color: var(--white);
+}
+
+.likeIconContainer:hover,
+.joinIconContainer:hover,
+.eventCountContainer:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.inactiveGroup:hover {
+  cursor: default;
+}
+
+.descriptionContainer {
+  margin-top: 24px;
+}
+
+.sponsoredIcon {
+  width: 120px;
+  max-width: 20%;
+  height: 120px;
+  position: absolute;
+  right: 40px;
+  bottom: 186px;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .groupDetailsContainer {
+    padding: 25px;
+  }
+
+  .sponsoredIcon {
+    width: 120px;
+    max-width: 20%;
+    height: 120px;
+    position: absolute;
+    right: 40px;
+    bottom: 250px;
+    object-fit: contain;
+  }
+}

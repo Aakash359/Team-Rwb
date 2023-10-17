@@ -1,0 +1,378 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transform: translateX(-363px);
+  background-color: white;
+  max-width: 1064px;
+  animation: modal 0.5s;
+  z-index: 2;
+}
+
+@keyframes modal {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.contentScroll {
+  overflow-y: scroll;
+  max-height: calc(100vh - 128px);
+}
+
+.content {
+  width: 100%;
+  max-width: 625px;
+  margin: 0 auto;
+  padding: 5px 40px 300px;
+}
+
+.icon {
+  margin-right: 10px;
+  color: var(--magenta);
+}
+
+.eventCreationFields {
+  padding: 20px 0;
+  border-bottom: 2px solid var(--grey8);
+}
+
+.container input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--grey40);
+  outline: 0;
+}
+
+.titleInput {
+  background-color: transparent;
+  font-family: 'ChangaOne-Italic';
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--navy);
+  text-transform: uppercase;
+  height: 50px;
+  text-indent: 2px;
+}
+
+.titleInput::placeholder {
+  color: var(--grey40);
+}
+
+.chapterEventUserType {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.chapterEventUserType div {
+  font-weight: bolder;
+}
+
+.chapterEventUserCard div {
+  padding-left: 0;
+}
+
+.hostUsersInput {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.hostUsersList {
+  z-index: 1;
+  width: 60%;
+  top: unset !important;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.item h4 {
+  text-transform: capitalize;
+}
+
+.item div {
+  padding: 0;
+}
+
+.item p {
+  font-size: 16px;
+  color: var(--grey80);
+  font-weight: bolder;
+}
+
+.item input {
+  padding-left: 0;
+  border-bottom: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--grey80);
+  font-weight: bolder;
+}
+
+.linkItem,
+.item input::placeholder {
+  color: var(--grey80);
+  text-transform: capitalize;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.item .addPhotoInput {
+  width: 200px;
+  align-self: center;
+  height: 20px;
+}
+
+.locationPlacesList {
+  border: 1px solid var(--grey80);
+  border-radius: 5px;
+  height: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.locationItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.locationSearchInputContainer {
+  flex-grow: 1;
+}
+
+.locationItem input {
+  position: relative;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.locationItem div:nth-of-type(2) {
+  right: 0;
+}
+
+.locationItem input::placeholder {
+  color: var(--grey80);
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.locationItem input:focus {
+  padding: 0;
+}
+
+.fullInlineContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.endTimePicker {
+  text-align: right;
+  max-width: 75px;
+}
+
+.endTimeIcon {
+  margin-left: 10px;
+}
+
+.linksContainer {
+  width: 100%;
+}
+
+.descriptionTextArea {
+  padding-bottom: 25px;
+}
+
+.inviteUsersTextArea {
+  border-top: 2px solid var(--grey8);
+  position: relative;
+  padding-bottom: 25px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
+
+.inviteSelectedUser {
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 0;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.inviteSelectedUser svg {
+  margin-left: 5px;
+}
+
+.invitedUsersList {
+  position: sticky;
+  top: 65px;
+  width: 100%;
+  border: 1px solid var(--grey80);
+  border-radius: 5px;
+  height: auto;
+  max-height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 50px;
+}
+
+.invitedUsersList li {
+  height: 120px;
+  border-bottom: 1px solid var(--grey20);
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+.invitedUsersList li:hover {
+  background-color: var(--grey5);
+  cursor: pointer;
+}
+
+.invitedUsersItem {
+  height: 78px;
+  width: 78px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.attachPhotoContainer {
+  position: fixed;
+  height: 64px;
+  bottom: 0;
+  background: var(--magenta);
+  width: 100%;
+}
+
+.attachPhotoButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.attachPhotoText {
+  color: var(--white);
+  margin-left: 10px;
+}
+
+.hideDefaultUpload {
+  display: none;
+}
+
+.imgPreviewContainer {
+  display: flex;
+  align-items: flex-start;
+  padding: 48px 24px 24px;
+}
+
+.imgPreview {
+  object-fit: contain;
+  width: 100%;
+}
+
+.modalXContainer {
+  cursor: pointer;
+  display: flex;
+  margin-top: -24px;
+}
+
+.titleContainer {
+  text-align: center;
+}
+
+.allDayEventContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all !important;
+}
+
+.allDayEventContainer input {
+  width: 100px !important;
+}
+
+.label {
+  color: var(--grey80);
+  font-weight: bolder;
+  padding-right: 14px;
+}
+
+.disabledContainer {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.subtypeContainer {
+  margin-top: 20px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--grey80);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.subtypeButton {
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  font-weight: bold;
+}
+
+.unactiveSubtypeButton {
+  color: var(--grey80);
+  background-color: var(--white);
+}
+
+.activeSubtypeButton {
+  color: var(--white);
+  background-color: var(--magenta);
+  
+}
+
+.subtypeButton:hover {
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    transform: translateX(0);
+  }
+
+  .content {
+    padding: 5px 20px 300px;
+  }
+
+  .invitedUsersList li {
+    padding: 0 20px;
+  }
+
+  .allDayEventContainer input {
+    width: 50px !important;
+  }
+}

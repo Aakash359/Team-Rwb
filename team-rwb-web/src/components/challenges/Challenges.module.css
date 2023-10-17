@@ -1,0 +1,50 @@
+.container {
+  border-color: var(--grey8);
+  position: relative;
+  padding-left: 363px;
+  height: 100%;
+}
+
+.challengeTabsContainer {
+  display: flex;
+}
+
+.challengeTab {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-bottom: 1px solid #f4f3f3;
+  border-left: 1px solid #f4f3f3;
+  cursor: pointer;
+  color: #828589;
+}
+
+.challengeTabActive {
+  border-bottom: 5px solid #d2003b;
+  cursor: default;
+}
+
+.challengeTabTitle {
+  font-weight: 900;
+}
+
+.challengeTabTitleActive {
+  color: #d2003b;
+  margin-bottom: -4px;
+}
+
+.sectionHeader {
+  margin-top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: var(--grey);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-bottom: 110px;
+  }
+}

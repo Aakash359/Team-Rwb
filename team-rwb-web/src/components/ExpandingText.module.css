@@ -1,0 +1,13 @@
+.lessText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+a.showMoreLink {
+  font-family: 'OpenSans-Semibold';
+  color: var(--magenta);
+  cursor: pointer;
+}

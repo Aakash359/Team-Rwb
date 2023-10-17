@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.container h2 {
+  padding: 0 25%;
+  text-align: center;
+}
+
+.topHandContainer {
+  transform: rotate(180deg);
+  margin-bottom: 10px;
+}
+
+.bottomHandContainer {
+  margin-top: 10px;
+}
+
+.bottomText {
+  margin-top: 26px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+  .container h2 {
+    padding: 0 20px;
+  }
+}

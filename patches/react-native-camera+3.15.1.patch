@@ -1,0 +1,504 @@
+diff --git a/node_modules/react-native-camera/android/build/intermediates/aapt_friendly_merged_manifests/generalDebug/aapt/AndroidManifest.xml b/node_modules/react-native-camera/android/build/intermediates/aapt_friendly_merged_manifests/generalDebug/aapt/AndroidManifest.xml
+new file mode 100644
+index 0000000..54310e7
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/aapt_friendly_merged_manifests/generalDebug/aapt/AndroidManifest.xml
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="org.reactnative.camera" >
++
++    <uses-sdk
++        android:minSdkVersion="21"
++        android:targetSdkVersion="31" />
++
++    <uses-permission android:name="android.permission.CAMERA" />
++
++    <uses-feature
++        android:name="android.hardware.camera"
++        android:required="false" />
++    <uses-feature
++        android:name="android.hardware.camera.autofocus"
++        android:required="false" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-camera/android/build/intermediates/aapt_friendly_merged_manifests/generalDebug/aapt/output-metadata.json b/node_modules/react-native-camera/android/build/intermediates/aapt_friendly_merged_manifests/generalDebug/aapt/output-metadata.json
+new file mode 100644
+index 0000000..bb459fa
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/aapt_friendly_merged_manifests/generalDebug/aapt/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "org.reactnative.camera",
++  "variantName": "generalDebug",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-camera/android/build/intermediates/aar_metadata/generalDebug/aar-metadata.properties b/node_modules/react-native-camera/android/build/intermediates/aar_metadata/generalDebug/aar-metadata.properties
+new file mode 100644
+index 0000000..8c9c699
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/aar_metadata/generalDebug/aar-metadata.properties
+@@ -0,0 +1,4 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
++minCompileSdk=1
++minAndroidGradlePluginVersion=1.0.0
+diff --git a/node_modules/react-native-camera/android/build/intermediates/incremental/mergeGeneralDebugShaders/merger.xml b/node_modules/react-native-camera/android/build/intermediates/incremental/mergeGeneralDebugShaders/merger.xml
+new file mode 100644
+index 0000000..02f87bd
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/incremental/mergeGeneralDebugShaders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/shaders"/></dataSet><dataSet config="general" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/general/shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/debug/shaders"/></dataSet><dataSet config="generalDebug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/generalDebug/shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugAssets/merger.xml b/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugAssets/merger.xml
+new file mode 100644
+index 0000000..8fb4c69
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugAssets/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/assets"/><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/build/intermediates/shader_assets/generalDebug/out"/></dataSet><dataSet config="general" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/general/assets"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/debug/assets"/></dataSet><dataSet config="generalDebug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/generalDebug/assets"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugResources/compile-file-map.properties b/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugResources/compile-file-map.properties
+new file mode 100644
+index 0000000..84a862f
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugResources/compile-file-map.properties
+@@ -0,0 +1,3 @@
++#Mon Aug 01 15:02:21 EDT 2022
++/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/res/layout-v14/texture_view.xml=/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/layout-v14/texture_view.xml
++/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/res/layout/surface_view.xml=/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/layout/surface_view.xml
+diff --git a/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugResources/merged.dir/values/values.xml b/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugResources/merged.dir/values/values.xml
+new file mode 100644
+index 0000000..b13249b
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugResources/merged.dir/values/values.xml
+@@ -0,0 +1,53 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <style name="Widget.CameraView" parent="android:Widget">
++        <item name="android:adjustViewBounds">false</item>
++        <item name="facing">back</item>
++        <item name="aspectRatio">4:3</item>
++        <item name="autoFocus">true</item>
++        <item name="flash">auto</item>
++    </style>
++    <declare-styleable name="CameraView">
++        <!--
++          Set this to true if you want the CameraView to adjust its bounds to preserve the aspect
++          ratio of its camera preview.
++        -->
++        <attr name="android:adjustViewBounds"/>
++        <!-- Direction the camera faces relative to device screen. -->
++        <attr format="enum" name="facing">
++            <!-- The camera device faces the opposite direction as the device's screen. -->
++            <enum name="back" value="0"/>
++            <!-- The camera device faces the same direction as the device's screen. -->
++            <enum name="front" value="1"/>
++        </attr>
++        <!-- Aspect ratio of camera preview and pictures. -->
++        <attr format="string" name="aspectRatio"/>
++        <!-- Continuous auto focus mode. -->
++        <attr format="boolean" name="autoFocus"/>
++        <!-- The flash mode. -->
++        <attr format="enum" name="flash">
++            <!-- Flash will not be fired. -->
++            <enum name="off" value="0"/>
++            <!--
++              Flash will always be fired during snapshot.
++              The flash may also be fired during preview or auto-focus depending on the driver.
++            -->
++            <enum name="on" value="1"/>
++            <!--
++              Constant emission of light during preview, auto-focus and snapshot.
++              This can also be used for video recording.
++            -->
++            <enum name="torch" value="2"/>
++            <!--
++              Flash will be fired automatically when required.
++              The flash may be fired during preview, auto-focus, or snapshot depending on the
++              driver.
++            -->
++            <enum name="auto" value="3"/>
++            <!--
++              Flash will be fired in red-eye reduction mode.
++            -->
++            <enum name="redEye" value="4"/>
++        </attr>
++    </declare-styleable>
++</resources>
+\ No newline at end of file
+diff --git a/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugResources/merger.xml b/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugResources/merger.xml
+new file mode 100644
+index 0000000..ea827ba
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/incremental/packageGeneralDebugResources/merger.xml
+@@ -0,0 +1,62 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/res"/><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/build/generated/res/rs/general/debug"/><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/build/generated/res/resValues/general/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/res"><file name="texture_view" path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/res/layout-v14/texture_view.xml" qualifiers="v14" type="layout"/><file name="surface_view" path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/res/layout/surface_view.xml" qualifiers="" type="layout"/><file path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/res/values/public.xml" qualifiers=""><public name="facing" type="attr"/><public name="aspectRatio" type="attr"/><public name="autoFocus" type="attr"/><public name="flash" type="attr"/><public name="Widget.CameraView" type="style"/></file><file path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/res/values/styles.xml" qualifiers=""><style name="Widget.CameraView" parent="android:Widget">
++        <item name="android:adjustViewBounds">false</item>
++        <item name="facing">back</item>
++        <item name="aspectRatio">4:3</item>
++        <item name="autoFocus">true</item>
++        <item name="flash">auto</item>
++    </style></file><file path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="CameraView">
++        
++        <attr name="android:adjustViewBounds"/>
++        
++        <attr format="enum" name="facing">
++            
++            <enum name="back" value="0"/>
++            
++            <enum name="front" value="1"/>
++        </attr>
++        
++        <attr format="string" name="aspectRatio"/>
++        
++        <attr format="boolean" name="autoFocus"/>
++        
++        <attr format="enum" name="flash">
++            
++            <enum name="off" value="0"/>
++            
++            <enum name="on" value="1"/>
++            
++            <enum name="torch" value="2"/>
++            
++            <enum name="auto" value="3"/>
++            
++            <enum name="redEye" value="4"/>
++        </attr>
++    </declare-styleable></file></source><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/build/generated/res/rs/general/debug"/><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/build/generated/res/resValues/general/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="general$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/general/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="general" generated-set="general$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/general/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generalDebug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/generalDebug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generalDebug" generated-set="generalDebug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/generalDebug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="CameraView">
++        
++        <attr name="android:adjustViewBounds"/>
++        
++        <attr format="enum" name="facing">
++            
++            <enum name="back" value="0"/>
++            
++            <enum name="front" value="1"/>
++        </attr>
++        
++        <attr format="string" name="aspectRatio"/>
++        
++        <attr format="boolean" name="autoFocus"/>
++        
++        <attr format="enum" name="flash">
++            
++            <enum name="off" value="0"/>
++            
++            <enum name="on" value="1"/>
++            
++            <enum name="torch" value="2"/>
++            
++            <enum name="auto" value="3"/>
++            
++            <enum name="redEye" value="4"/>
++        </attr>
++    </declare-styleable></configuration></mergedItems></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-camera/android/build/intermediates/manifest_merge_blame_file/generalDebug/manifest-merger-blame-general-debug-report.txt b/node_modules/react-native-camera/android/build/intermediates/manifest_merge_blame_file/generalDebug/manifest-merger-blame-general-debug-report.txt
+new file mode 100644
+index 0000000..850f9cf
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/manifest_merge_blame_file/generalDebug/manifest-merger-blame-general-debug-report.txt
+@@ -0,0 +1,28 @@
++1<?xml version="1.0" encoding="utf-8"?>
++2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++3    package="org.reactnative.camera" >
++4
++5    <uses-sdk
++6        android:minSdkVersion="21"
++6-->/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++7        android:targetSdkVersion="31" />
++7-->/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++8
++9    <uses-permission android:name="android.permission.CAMERA" />
++9-->/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:2:3-63
++9-->/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:2:20-60
++10
++11    <uses-feature
++11-->/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:4:3-83
++12        android:name="android.hardware.camera"
++12-->/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:4:17-55
++13        android:required="false" />
++13-->/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:4:56-80
++14    <uses-feature
++14-->/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:5:3-93
++15        android:name="android.hardware.camera.autofocus"
++15-->/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:5:17-65
++16        android:required="false" />
++16-->/Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:5:66-90
++17
++18</manifest>
+diff --git a/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml b/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml
+new file mode 100644
+index 0000000..54310e7
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="org.reactnative.camera" >
++
++    <uses-sdk
++        android:minSdkVersion="21"
++        android:targetSdkVersion="31" />
++
++    <uses-permission android:name="android.permission.CAMERA" />
++
++    <uses-feature
++        android:name="android.hardware.camera"
++        android:required="false" />
++    <uses-feature
++        android:name="android.hardware.camera.autofocus"
++        android:required="false" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-camera/android/build/intermediates/navigation_json/generalDebug/navigation.json b/node_modules/react-native-camera/android/build/intermediates/navigation_json/generalDebug/navigation.json
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/navigation_json/generalDebug/navigation.json
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/react-native-camera/android/build/intermediates/packaged_manifests/generalDebug/output-metadata.json b/node_modules/react-native-camera/android/build/intermediates/packaged_manifests/generalDebug/output-metadata.json
+new file mode 100644
+index 0000000..c93c308
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/packaged_manifests/generalDebug/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "PACKAGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "org.reactnative.camera",
++  "variantName": "generalDebug",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "../../merged_manifest/generalDebug/AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/layout-v14/texture_view.xml b/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/layout-v14/texture_view.xml
+new file mode 100644
+index 0000000..91953b7
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/layout-v14/texture_view.xml
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="utf-8"?>
++<!--
++    Copyright (C) 2016 The Android Open Source Project
++    Licensed under the Apache License, Version 2.0 (the "License");
++    you may not use this file except in compliance with the License.
++    You may obtain a copy of the License at
++         http://www.apache.org/licenses/LICENSE-2.0
++    Unless required by applicable law or agreed to in writing, software
++    distributed under the License is distributed on an "AS IS" BASIS,
++    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++    See the License for the specific language governing permissions and
++    limitations under the License.
++-->
++<merge xmlns:android="http://schemas.android.com/apk/res/android">
++
++    <TextureView
++        android:id="@+id/texture_view"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:gravity="center"
++        />
++
++</merge>
+diff --git a/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/layout/surface_view.xml b/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/layout/surface_view.xml
+new file mode 100644
+index 0000000..4029bb9
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/layout/surface_view.xml
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="utf-8"?>
++<!--
++    Copyright (C) 2016 The Android Open Source Project
++    Licensed under the Apache License, Version 2.0 (the "License");
++    you may not use this file except in compliance with the License.
++    You may obtain a copy of the License at
++         http://www.apache.org/licenses/LICENSE-2.0
++    Unless required by applicable law or agreed to in writing, software
++    distributed under the License is distributed on an "AS IS" BASIS,
++    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++    See the License for the specific language governing permissions and
++    limitations under the License.
++-->
++<merge xmlns:android="http://schemas.android.com/apk/res/android">
++
++    <SurfaceView
++        android:id="@+id/surface_view"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:gravity="center"
++        />
++
++</merge>
+diff --git a/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/values/values.xml b/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/values/values.xml
+new file mode 100644
+index 0000000..b13249b
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/values/values.xml
+@@ -0,0 +1,53 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <style name="Widget.CameraView" parent="android:Widget">
++        <item name="android:adjustViewBounds">false</item>
++        <item name="facing">back</item>
++        <item name="aspectRatio">4:3</item>
++        <item name="autoFocus">true</item>
++        <item name="flash">auto</item>
++    </style>
++    <declare-styleable name="CameraView">
++        <!--
++          Set this to true if you want the CameraView to adjust its bounds to preserve the aspect
++          ratio of its camera preview.
++        -->
++        <attr name="android:adjustViewBounds"/>
++        <!-- Direction the camera faces relative to device screen. -->
++        <attr format="enum" name="facing">
++            <!-- The camera device faces the opposite direction as the device's screen. -->
++            <enum name="back" value="0"/>
++            <!-- The camera device faces the same direction as the device's screen. -->
++            <enum name="front" value="1"/>
++        </attr>
++        <!-- Aspect ratio of camera preview and pictures. -->
++        <attr format="string" name="aspectRatio"/>
++        <!-- Continuous auto focus mode. -->
++        <attr format="boolean" name="autoFocus"/>
++        <!-- The flash mode. -->
++        <attr format="enum" name="flash">
++            <!-- Flash will not be fired. -->
++            <enum name="off" value="0"/>
++            <!--
++              Flash will always be fired during snapshot.
++              The flash may also be fired during preview or auto-focus depending on the driver.
++            -->
++            <enum name="on" value="1"/>
++            <!--
++              Constant emission of light during preview, auto-focus and snapshot.
++              This can also be used for video recording.
++            -->
++            <enum name="torch" value="2"/>
++            <!--
++              Flash will be fired automatically when required.
++              The flash may be fired during preview, auto-focus, or snapshot depending on the
++              driver.
++            -->
++            <enum name="auto" value="3"/>
++            <!--
++              Flash will be fired in red-eye reduction mode.
++            -->
++            <enum name="redEye" value="4"/>
++        </attr>
++    </declare-styleable>
++</resources>
+\ No newline at end of file
+diff --git a/node_modules/react-native-camera/android/build/intermediates/public_res/generalDebug/public.txt b/node_modules/react-native-camera/android/build/intermediates/public_res/generalDebug/public.txt
+new file mode 100644
+index 0000000..4742c36
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/intermediates/public_res/generalDebug/public.txt
+@@ -0,0 +1,5 @@
++style Widget_CameraView
++attr aspectRatio
++attr autoFocus
++attr facing
++attr flash
+diff --git a/node_modules/react-native-camera/android/build/outputs/logs/manifest-merger-general-debug-report.txt b/node_modules/react-native-camera/android/build/outputs/logs/manifest-merger-general-debug-report.txt
+new file mode 100644
+index 0000000..5b43031
+--- /dev/null
++++ b/node_modules/react-native-camera/android/build/outputs/logs/manifest-merger-general-debug-report.txt
+@@ -0,0 +1,41 @@
++-- Merging decision tree log ---
++manifest
++ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:1:1-6:12
++INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:1:1-6:12
++INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:1:1-6:12
++	package
++		ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:1:70-102
++		INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++		INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++	xmlns:android
++		ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:1:11-69
++uses-permission#android.permission.CAMERA
++ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:2:3-63
++	android:name
++		ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:2:20-60
++uses-feature#android.hardware.camera
++ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:4:3-83
++	android:required
++		ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:4:56-80
++	android:name
++		ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:4:17-55
++uses-feature#android.hardware.camera.autofocus
++ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:5:3-93
++	android:required
++		ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:5:66-90
++	android:name
++		ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml:5:17-65
++uses-sdk
++INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++	android:targetSdkVersion
++		INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++		ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++		INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++	android:minSdkVersion
++		INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++		ADDED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
++		INJECTED from /Users/danielellman/Documents/rwb/rwb-mobile/TeamRWB/node_modules/react-native-camera/android/src/main/AndroidManifest.xml
+diff --git a/node_modules/react-native-camera/src/RNCamera.js b/node_modules/react-native-camera/src/RNCamera.js
+index ace2be7..dc6eba5 100644
+--- a/node_modules/react-native-camera/src/RNCamera.js
++++ b/node_modules/react-native-camera/src/RNCamera.js
+@@ -5,7 +5,6 @@ import {
+   findNodeHandle,
+   Platform,
+   NativeModules,
+-  ViewPropTypes,
+   requireNativeComponent,
+   View,
+   ActivityIndicator,
+@@ -13,6 +12,7 @@ import {
+   StyleSheet,
+   PermissionsAndroid,
+ } from 'react-native';
++import {ViewPropTypes} from 'deprecated-react-native-prop-types';
+ 
+ import type { FaceFeature } from './FaceDetector';
+ 

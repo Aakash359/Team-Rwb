@@ -1,0 +1,63 @@
+/* Text Input */
+
+.container {
+  margin: 30px 0 10px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+/* used for link url containers */
+.reducedMargin {
+  margin-top: 10px;
+}
+.label {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+.textInput {
+  display: block;
+  width: 100%;
+  outline: none;
+  border-style: none;
+  border-bottom: var(--grey40) 2px solid;
+  padding: 0 0 5px;
+  margin-bottom: 5px;
+  z-index: 1;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.textInput:focus {
+  border-bottom: black 2px solid;
+}
+.textInputError {
+  border-bottom: var(--magenta) 2px solid;
+}
+input:valid ~ .label,
+input:focus ~ .label,
+input.form-file ~ .label,
+input.has-value ~ .label {
+  top: -22px;
+  color: var(--grey);
+  font-family: 'OpenSans-Bold';
+  font-size: 12px;
+  text-transform: uppercase;
+}
+input:focus ~ .label,
+input:not(:placeholder-shown) ~ .label {
+  top: -22px;
+  color: black;
+  font-family: 'OpenSans-Bold';
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.characterCount {
+  text-align: right;
+}

@@ -1,0 +1,100 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transform: translateX(-363px);
+  background-color: white;
+  max-width: 1064px;
+  animation: modal 0.5s;
+  z-index: 2;
+}
+
+@keyframes modal {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.content {
+  padding-bottom: 40px;
+  overflow: scroll;
+  max-height: calc(100vh - 128px);
+}
+
+.content textarea {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.shareChallengeBoxWrapper {
+  margin: 40px;
+  margin-bottom: 0px;
+}
+
+.attachPhotoContainer {
+  position: fixed;
+  height: 64px;
+  top: calc(100vh - 64px);
+  background: var(--magenta);
+  width: 100%;
+}
+
+.attachPhotoButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.attachPhotoText {
+  color: var(--white);
+  margin-left: 10px;
+}
+
+.hideDefaultUpload {
+  display: none;
+}
+
+.imgPreviewContainer {
+  padding: 0px 40px;
+  width: 100%;
+  max-width: 625px;
+  margin: 0 auto;
+}
+
+.modalXContainer {
+  cursor: pointer;
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.usersListContainer {
+  width: 100%;
+  max-width: 545px;
+  margin: 0 auto;
+  border: 1px solid var(--grey80);
+  border-radius: 5px;
+  height: auto;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    transform: translateX(0);
+  }
+
+  .content textarea {
+    padding: 0 20px;
+  }
+}

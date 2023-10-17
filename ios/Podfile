@@ -1,0 +1,84 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '13.0'
+install! 'cocoapods', :deterministic_uuids => false
+
+use_frameworks! :linkage => :static
+
+target 'TeamRWB' do
+  $static_framework = []
+  # This is the whole magic starts
+  # Hit build times and times and which library ever failing add here
+  $static_framework += [
+    'react-native-maps',
+    'react-native-google-maps',
+    'Google-Maps-iOS-Utils',
+    'GoogleMaps',
+  ]
+  pod 'GoogleSignIn'
+  # React Native Maps dependencies
+  rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', :path => rn_maps_path
+  pod 'GoogleMaps', '7.0.0'
+  pod 'Google-Maps-iOS-Utils', '4.1.0'
+
+  pod 'Firebase', :modular_headers => true
+  pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+
+  pod 'GoogleTagManager', '~> 7.0'
+
+  config = use_native_modules!
+
+  # Flags change depending on the env values.
+  # flags = get_default_flags()
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => false,
+    :fabric_enabled => false,
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+  target 'TeamRWBTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  # ****** THIS IS THE MAGIC ******
+  pre_install do |installer|
+    Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+        installer.pod_targets.each do |pod|
+            if $static_framework.include?(pod.name)
+                def pod.build_type;
+                Pod::BuildType.static_library # >= 1.9
+            end
+        end
+    end
+  end
+
+  post_install do |installer|
+  #  if !ENV['IS_CI']
+  #    flipper_post_install(installer)
+  #  end
+
+
+
+  # # This is also important AND MUST BE IN SAME ORDER
+  react_native_post_install(installer)
+  installer.pods_project.targets.each do |target|
+    if target.name == 'RCT-Folly'
+      target.build_configurations.each do |config|
+        config.build_settings['HEADER_SEARCH_PATHS'] = "$(inherited) ${PODS_ROOT}/fmt/include"
+      end
+    end
+  end
+    __apply_Xcode_12_5_M1_post_install_workaround(installer)
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+  end
+end
+end

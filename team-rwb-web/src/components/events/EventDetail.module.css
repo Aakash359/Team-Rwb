@@ -1,0 +1,324 @@
+.contentContainer {
+  width: 100%;
+  padding: 40px;
+  border-bottom: 2px solid var(--grey8);
+}
+
+h1 {
+  color: var(--navy);
+  font-size: 24px;
+}
+
+.chapterName {
+  margin-bottom: 20px;
+  color: var(--magenta);
+}
+
+.calendarContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.calendarContainer svg {
+  width: 20px;
+  height: 20px;
+  color: var(--magenta);
+  margin-right: 10px;
+}
+
+.locationContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.locationContainer svg {
+  width: 20px;
+  height: 20px;
+  color: var(--magenta);
+  margin-right: 10px;
+}
+
+.virtualIcon {
+  margin-left: 10px;
+}
+
+.eventHostContainer {
+  display: flex;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.eventHostContainer svg {
+  width: 20px;
+  height: 20px;
+  color: var(--magenta);
+  margin-right: 10px;
+}
+
+.hostProfileImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.hostDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.hostTitle {
+  color: var(--magenta);
+  margin-bottom: 5px;
+}
+
+.hostName {
+  color: var(--navy);
+}
+
+.statusButton {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey40);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.goingButton {
+  margin-right: 40px;
+}
+
+.statusButton:hover {
+  background-color: var(--grey20);
+  cursor: pointer;
+}
+
+.statusButton:active {
+  background-color: var(--grey20);
+}
+
+.statusButtonClicked {
+  background-color: var(--navy);
+  color: #ffffff;
+}
+
+.statusButtonClicked:hover {
+  background-color: #364b68;
+}
+
+.statusButtonClicked:active {
+  background-color: #364b68;
+}
+
+.recordWorkoutButtonLink {
+  width: 100%;
+}
+
+.recordWorkoutButton {
+  width: 100%;
+}
+
+.statusButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.cancelButton {
+  background-color: var(--magenta);
+  color: #ffffff;
+  width: 45%;
+}
+
+.cancelButton svg {
+  color: var(--white);
+}
+
+.canceledEventContainer {
+  display: flex;
+  color: var(--magenta);
+  text-transform: uppercase;
+  background-color: var(--white);
+  border-radius: 5px;
+  border: 2px solid var(--magenta);
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.removedEventContainer {
+  display: flex;
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: var(--magenta);
+  border-radius: 5px;
+  border: 2px solid var(--white);
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.removedEventContainer:hover {
+  background-color: var(--grey20);
+  cursor: pointer;
+}
+
+.removedEventContainer:active {
+  background-color: var(--grey20);
+}
+
+.updateButton {
+  background-color: var(--navy);
+  color: #ffffff;
+  width: 45%;
+}
+
+.updateButton svg {
+  color: var(--white);
+}
+
+.eventStatus {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.buttonsContainerCheckedIn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.attendeesContainer {
+  display: flex;
+  position: relative;
+}
+
+.attendeesContainer img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  margin-right: -10px;
+}
+
+.attendees {
+  display: flex;
+  margin-right: 20px;
+}
+
+.attendeesCount {
+  display: flex;
+  align-items: center;
+  color: var(--magenta);
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.attendeesCountIcon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  color: var(--magenta);
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.attendeesCount svg {
+  width: 30px;
+  height: 30px;
+  margin-left: -5px;
+}
+
+.description {
+  margin-top: 15px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.eventLinks {
+  margin-top: 15px;
+}
+
+.loadingNewPostContainer {
+  height: 60px;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapContainer {
+  width: 300px;
+  max-width: 80%;
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.eventNameAndReportContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.eventNameAndChapterContainer {
+  flex-direction: column;
+  flex: 1;
+}
+
+.optionsContainer:hover {
+  cursor: pointer;
+}
+
+.virtualEventCategory {
+  text-transform: capitalize;
+}
+
+.challengeInfoContainer {
+  border: 2px solid var(--grey8);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 660px) {
+  .attendees img:nth-of-type(n + 6) {
+    display: none;
+  }
+
+  .contentContainer {
+    padding: 20px;
+  }
+}
+
+.recordWorkoutWrapper {
+  width: 100%;
+}
+
+.recordWorkoutButtonContainer {
+  display: flex;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,32 @@
+.floatingBtnContainer {
+  background-color: var(--magenta);
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  left: 90%;
+  bottom: 40px;
+  margin-right: 40px;
+  align-content: flex-end;
+  cursor: pointer;
+}
+
+.floatingBtnContainer:active {
+  background-color: var(--magenta80);
+}
+
+.addIcon {
+  color: var(--white);
+  font-size: 35px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .floatingBtnContainer {
+    bottom: 112px;
+  }
+}

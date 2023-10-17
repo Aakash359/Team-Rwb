@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "738852958689",
+    "firebase_url": "https://team-rwb-app-dev.firebaseio.com",
+    "project_id": "team-rwb-app-dev",
+    "storage_bucket": "team-rwb-app-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738852958689:android:debf55dd9d8b0f68",
+        "android_client_info": {
+          "package_name": "com.teamrwb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738852958689-jq6lpikmqn4vdgu0p7u3tmh656l3tsj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNmYLqLYg4aqD-ZrVgvIsQcyzmLAkF2tE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738852958689-2m7f9a5rg91sgk76bshr440u90v8oo8s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "738852958689-2ig4u6ecvjq8feb25c19kt1vmrs837l8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.teamrwb"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

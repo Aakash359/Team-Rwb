@@ -1,0 +1,186 @@
+/* PostView */
+
+.container {
+  border-color: var(--grey8);
+  position: relative;
+  height: 100%;
+}
+.userActivityContainer {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 2px solid var(--grey8);
+}
+.backIcon {
+  margin-right: 25px;
+  cursor: pointer;
+}
+.userImageContainer {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.userPostContainer {
+  padding: 20px 40px;
+  border-bottom: 2px solid var(--grey8);
+}
+.postText {
+  margin-bottom: 15px;
+}
+.reactionContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.likeContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.likeIcon {
+  margin-right: 5px;
+}
+.likeIcon:hover {
+  opacity: 0.6;
+}
+.postImage {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Comment */
+
+.commentContainer {
+  border-bottom: 2px solid var(--grey8);
+  padding: 20px 40px;
+}
+.userCommentContainer {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Reply */
+
+.replyContainer {
+  padding: 20px 0 0 40px;
+}
+.userReplyContainer {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.replyIcon {
+  margin-right: 10px;
+}
+
+.imgModalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transform: translateX(-363px);
+  background-color: black;
+  max-width: 1064px;
+  animation: modal 0.5s;
+  z-index: 2;
+}
+
+.modalXContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.reportDeleteContainer {
+  align-self: flex-start;
+  position: absolute;
+  right: 40px;
+}
+
+.previousCommentsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid var(--grey8);
+  padding: 20px 40px;
+  height: 60px;
+}
+
+.previousCommentsText {
+  color: var(--magenta);
+  cursor: pointer;
+}
+
+.previousCommentsText:hover {
+  opacity: 0.6;
+}
+
+.commentsContainer {
+  padding-bottom: 72px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-bottom: 82px;
+  }
+
+  .userActivityContainer {
+    padding: 20px;
+  }
+
+  .userActivityContainer p {
+    width: 60%;
+  }
+
+  .reportDeleteContainer {
+    right: 20px;
+  }
+
+  .userImageContainer {
+    width: 70px;
+    height: 70px;
+    margin-right: 16px;
+  }
+
+  .backIcon {
+    margin-right: 16px;
+  }
+
+  .userPostContainer {
+    padding: 20px;
+  }
+
+  .commentsContainer {
+    padding-bottom: 56px;
+  }
+
+  .previousCommentsContainer {
+    padding: 20px;
+  }
+}

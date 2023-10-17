@@ -1,0 +1,186 @@
+{
+  "total_count": "12",
+  "checked_in": {
+    "attendees": [
+      {
+        "last_name": "Lman3",
+        "first_name": "Del3",
+        "eagle_leader": true,
+        "military_branch": "Air Force",
+        "military_status": "Veteran",
+        "public_profile": true,
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/04/1585855853-1-150x150.jpg",
+        "preferred_chapter": {
+          "name": "Team RWB Columbus OH",
+          "id": 8585
+        },
+        "id": 38150
+      },
+      {
+        "military_status": "Civilian",
+        "military_branch": null,
+        "id": 38383,
+        "preferred_chapter": {
+          "id": 8585,
+          "name": "Team RWB Columbus OH"
+        },
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/04/1585855853-1-150x150.jpg",
+        "public_profile": false,
+        "first_name": "D92",
+        "last_name": "E92",
+        "eagle_leader": false
+      },
+      {
+        "eagle_leader": false,
+        "last_name": "Garcia",
+        "first_name": "Jerry",
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/05/1589405903-1-150x150.jpg",
+        "public_profile": true,
+        "preferred_chapter": {
+          "name": "Team RWB Bend OR",
+          "id": 8557
+        },
+        "id": 38391,
+        "military_branch": "Army",
+        "military_status": "Active Duty"
+      }
+    ],
+    "total_count": 3
+  },
+  "interested": {
+    "total_count": 3,
+    "attendees": [
+      {
+        "last_name": "Lman3",
+        "first_name": "Del3",
+        "eagle_leader": true,
+        "military_branch": "Air Force",
+        "military_status": "Veteran",
+        "public_profile": true,
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/04/1585855853-1-150x150.jpg",
+        "preferred_chapter": {
+          "name": "Team RWB Columbus OH",
+          "id": 8585
+        },
+        "id": 38150
+      },
+      {
+        "military_status": "Civilian",
+        "military_branch": null,
+        "id": 38383,
+        "preferred_chapter": {
+          "id": 8585,
+          "name": "Team RWB Columbus OH"
+        },
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/04/1585855853-1-150x150.jpg",
+        "public_profile": false,
+        "first_name": "D92",
+        "last_name": "E92",
+        "eagle_leader": false
+      },
+      {
+        "eagle_leader": false,
+        "last_name": "Garcia",
+        "first_name": "Jerry",
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/05/1589405903-1-150x150.jpg",
+        "public_profile": true,
+        "preferred_chapter": {
+          "name": "Team RWB Bend OR",
+          "id": 8557
+        },
+        "id": 38391,
+        "military_branch": "Army",
+        "military_status": "Active Duty"
+      }
+    ]
+  },
+  "going": {
+    "total_count": 6,
+    "attendees": [
+      {
+        "last_name": "Lman3",
+        "first_name": "Del3",
+        "eagle_leader": true,
+        "military_branch": "Air Force",
+        "military_status": "Veteran",
+        "public_profile": true,
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/04/1585855853-1-150x150.jpg",
+        "preferred_chapter": {
+          "name": "Team RWB Columbus OH",
+          "id": 8585
+        },
+        "id": 38150
+      },
+      {
+        "military_status": "Civilian",
+        "military_branch": null,
+        "id": 38383,
+        "preferred_chapter": {
+          "id": 8585,
+          "name": "Team RWB Columbus OH"
+        },
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/04/1585855853-1-150x150.jpg",
+        "public_profile": false,
+        "first_name": "D92",
+        "last_name": "E92",
+        "eagle_leader": false
+      },
+      {
+        "eagle_leader": false,
+        "last_name": "Garcia",
+        "first_name": "Jerry",
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/05/1589405903-1-150x150.jpg",
+        "public_profile": true,
+        "preferred_chapter": {
+          "name": "Team RWB Bend OR",
+          "id": 8557
+        },
+        "id": 38391,
+        "military_branch": "Army",
+        "military_status": "Active Duty"
+      },
+      {
+        "military_status": "Civilian",
+        "military_branch": null,
+        "id": 38383,
+        "preferred_chapter": {
+          "id": 8585,
+          "name": "Team RWB Columbus OH"
+        },
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/04/1585855853-1-150x150.jpg",
+        "public_profile": true,
+        "first_name": "D92",
+        "last_name": "E92",
+        "eagle_leader": false
+      },
+      {
+        "eagle_leader": false,
+        "last_name": "Garcia",
+        "first_name": "Jerry",
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/05/1589405903-1-150x150.jpg",
+        "public_profile": true,
+        "preferred_chapter": {
+          "name": "Team RWB Bend OR",
+          "id": 8557
+        },
+        "id": 38391,
+        "military_branch": "Army",
+        "military_status": "Active Duty"
+      },
+      {
+        "military_status": "Civilian",
+        "military_branch": null,
+        "id": 38383,
+        "preferred_chapter": {
+          "id": 8585,
+          "name": "Team RWB Columbus OH"
+        },
+        "profile_photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/04/1585855853-1-150x150.jpg",
+        "public_profile": true,
+        "first_name": "D92",
+        "last_name": "E92",
+        "eagle_leader": false
+      }
+    ]
+  }
+}

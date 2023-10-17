@@ -1,0 +1,103 @@
+/* Unjoined Challenge Card */
+
+.container {
+  border: 1px solid var(--grey20);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.topContainer {
+  display: flex;
+}
+
+.titleAndTimeContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title {
+  font-family: 'OpenSans-Bold';
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--navy);
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.description {
+  margin: 15px 0;
+  width: 100%;
+  white-space: pre-wrap;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  /* each row is 20px, extend to an extra line to avoid ellipsis and cut off the last line */
+  max-height: 60px;
+}
+
+.joinButton {
+  margin-top: 5px;
+  flex-grow: 1;
+  flex-basis: 18%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--magenta);
+  color: var(--white);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'OpenSans-Extrabold';
+  font-size: 16px;
+}
+
+.profileImg {
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.barContainer {
+  height: 10px;
+  background-color: var(--grey20);
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.bottomContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placementContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 5px 0;
+}
+
+.percentageText {
+  text-align: right;
+  font-size: 9px;
+  color: var(--white);
+  line-height: 1;
+  padding-right: 5px;
+  font-family: 'OpenSans-Bold';
+}
+
+.listBadgeIcon {
+  height: 40px;
+  width: 40px;
+}

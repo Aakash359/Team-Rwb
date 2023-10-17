@@ -1,0 +1,30 @@
+.legalHeader {
+  font-family: 'OpenSans';
+  text-align: center;
+  font-size: 16px;
+  color: var(--magenta);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.legalSubheader {
+  font-family: 'OpenSans';
+  text-align: center;
+  font-size: 16px;
+  color: var(--navy);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.legalBodyCopy {
+  font-family: 'OpenSans';
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--navy);
+  padding-bottom: 10px;
+}
+.legalBodySection {
+  font-family: 'OpenSans-Semibold';
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--navy);
+}

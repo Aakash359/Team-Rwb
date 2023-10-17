@@ -1,0 +1,82 @@
+.filterLozenges {
+  /* Overides border-radius of MuiIconButton-root */
+  border-radius: 23px !important;
+}
+
+.filtersContainer::after {
+  content: '';
+  padding-right: 20px !important;
+}
+
+.filtersContainer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  color: var(--grey80);
+  overflow-x: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.filtersContainer::-webkit-scrollbar {
+  height: 0;
+}
+
+.singleContainer {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border: 1px solid var(--grey80);
+  border-radius: 20px;
+  padding: 8px 10px;
+  height: 40px;
+  color: var(--grey80);
+  text-transform: capitalize;
+}
+
+.selected {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.filterCounterContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--grey80);
+  border-radius: 20px;
+  padding: 8px;
+  height: 40px;
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.filterCounter {
+  padding: 2px;
+  margin-right: 5px;
+  background-color: var(--white);
+  color: var(--navy);
+  border-radius: 5px;
+}
+
+.groupEventLozengesContainer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  color: var(--grey80);
+  overflow-x: scroll;
+  overflow-y: auto;
+  white-space: nowrap;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.groupEventLozengesContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.groupEventLozengesContainer::after {
+  content: '';
+  padding-right: 20px !important;
+}

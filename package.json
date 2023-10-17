@@ -1,0 +1,107 @@
+{
+  "name": "TeamRWB",
+  "version": "3.6.8",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "TZ=etc/UTC jest",
+    "lint": "eslint src/",
+    "fmt": "node_modules/.bin/prettier --write \"src/**/*.js\"",
+    "postinstall": "./postinstall.sh && patch-package",
+    "build-android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && rm -rf android/app/src/main/res/drawable-* && rm -rf android/app/src/main/res/raw && rm -rf android/app/build/generated/res/resValues/release/values/",
+    "build-ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'",
+    "adb": "adb reverse tcp:8081 tcp:8081"
+  },
+  "dependencies": {
+    "@invertase/react-native-apple-authentication": "1.1.2",
+    "@react-native-async-storage/async-storage": "1.17.7",
+    "@react-native-community/cameraroll": "git+https://github.com/BohdanSol/react-native-cameraroll.git",
+    "@react-native-community/datetimepicker": "2.2.1",
+    "@react-native-community/geolocation": "2.0.2",
+    "@react-native-community/masked-view": "0.1.6",
+    "@react-native-community/push-notification-ios": "1.10.0",
+    "@react-native-community/slider": "2.0.9",
+    "@react-native-firebase/analytics": "16.4.6",
+    "@react-native-firebase/app": "16.4.6",
+    "@react-native-firebase/messaging": "16.4.6",
+    "@react-native-google-signin/google-signin": "^8.0.0",
+    "@react-native-picker/picker": "^2.2.1",
+    "adm-zip": "0.4.13",
+    "deprecated-react-native-prop-types": "^2.2.0",
+    "fbjs": "^3.0.2",
+    "lodash.debounce": "4.0.8",
+    "moment": "2.24.0",
+    "moment-timezone": "0.5.31",
+    "npm": "^6.14.18",
+    "patch-package": "^6.4.7",
+    "plist": "3.0.1",
+    "query-string": "^6.11.1",
+    "ramda": "^0.27.0",
+    "react": "18.0.0",
+    "react-native": "0.69.7",
+    "react-native-activity-feed": "0.8.18",
+    "react-native-add-calendar-event": "3.0.0",
+    "react-native-camera": "3.15.1",
+    "react-native-fbsdk": "^3.0.0",
+    "react-native-gesture-handler": "2.5.0",
+    "react-native-get-random-values": "^1.8.0",
+    "react-native-htmlview": "0.15.0",
+    "react-native-image-resizer": "1.1.0",
+    "react-native-keyboard-aware-scroll-view": "^0.9.5",
+    "react-native-keychain": "4.0.5",
+    "react-native-maps": "1.2.0",
+    "react-native-marketingcloudsdk": "7.4.3",
+    "react-native-modal-datetime-picker": "8.1.1",
+    "react-native-permissions": "2.0.9",
+    "react-native-push-notification": "3.1.9",
+    "react-native-reanimated": "2.12.0",
+    "react-native-safe-area-context": "0.7.3",
+    "react-native-screens": "3.15.0",
+    "react-native-simple-radio-button": "2.7.4",
+    "react-native-store-review": "0.1.5",
+    "react-native-svg": "11.0.1",
+    "react-native-webview": "^9.0.2",
+    "react-navigation": "4.4.4",
+    "react-navigation-stack": "2.0.15",
+    "react-navigation-tabs": "2.11.1",
+    "rn-material-ui-textfield": "1.0.5",
+    "save": "^2.4.0",
+    "xcode": "2.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.9",
+    "@babel/runtime": "7.12.5",
+    "@react-native-community/eslint-config": "2.0.0",
+    "babel-jest": "26.6.3",
+    "eslint": "^7.32.0",
+    "javascript-obfuscator": "^0.27.4",
+    "jest": "26.6.3",
+    "jest-fetch-mock": "2.1.2",
+    "jetifier": "^1.6.5",
+    "metro-react-native-babel-preset": "^0.70.3",
+    "prettier": "2.0.5",
+    "react-test-renderer": "18.0.0"
+  },
+  "jest": {
+    "globals": {
+      "__DEV__": false
+    },
+    "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>/jest/globals.js"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest/setup.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|react-navigation|@react-navigation/.*))"
+    ]
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  }
+}

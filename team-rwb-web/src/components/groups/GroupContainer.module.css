@@ -1,0 +1,49 @@
+.container {
+  background-color: var(--white);
+}
+
+.favoritesContainer {
+  background-color: var(--grey20);
+}
+
+.title {
+  padding: 25px 40px;
+}
+
+.scrollContainer {
+  display: flex;
+  padding: 0 36px;
+  overflow-x: scroll;
+  overflow-y: auto;
+  /* white-space: nowrap; */
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollContainer p {
+  padding-left: 4px;
+}
+
+/* place holder for animated placeholder */
+.spinnerContainer {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    padding: 25px;
+  }
+
+  .scrollContainer {
+    padding: 0 20px;
+  }
+}

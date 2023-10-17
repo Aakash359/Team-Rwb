@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+}
+
+.imgContainer {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin: 0 5px;
+}
+
+.profilePhoto {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}

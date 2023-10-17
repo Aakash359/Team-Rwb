@@ -1,0 +1,15 @@
+{
+  "applinks":
+  {
+    "apps":[],
+    "details":[{
+      "appID":"6ET73A82RA.org.teamrwb.TeamRWB",
+      "paths":[
+        "/verify",
+        "/event/*/",
+        "events/*",
+        "groups/*",
+        "challenges/*",
+        "/wp-login-reset-completed.php"]
+    }]
+},"activitycontinuation":{"apps":["6ET73A82RA.org.teamrwb.TeamRWB"]}}

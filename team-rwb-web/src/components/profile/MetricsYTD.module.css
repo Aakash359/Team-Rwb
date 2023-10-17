@@ -1,0 +1,29 @@
+.ytdContainer {
+  display: flex;
+  flex: 1;
+}
+
+.workoutInfoContainer {
+  display: flex;
+  flex: 1;
+  margin-right: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.workoutInfoLabelText {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.workoutInfoText {
+  font-size: 40px;
+  color: '#63666A';
+}
+
+@media only screen and (max-width: 768px) {
+  .workoutInfoText {
+    font-size: 30px;
+  }
+}

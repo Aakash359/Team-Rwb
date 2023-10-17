@@ -1,0 +1,24 @@
+/* Radio Form */
+
+.container {
+  margin-bottom: 30px;
+}
+.radioInput {
+  padding: 5px 0;
+}
+.radioInput input {
+  display: inline-block;
+  vertical-align: top;
+}
+.radioInput label {
+  display: inline-block;
+  width: calc(100% - 25px);
+  position: relative;
+  margin-left: 5px;
+}
+.error {
+  margin-top: 10px;
+}
+.inlineContainer {
+  display: flex;
+}

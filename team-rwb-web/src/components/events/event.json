@@ -1,0 +1,34 @@
+{
+  "category": "training",
+  "location": {
+    "state": "Ohio",
+    "country": "US",
+    "city": "Columbus",
+    "latitude": 39.9554,
+    "zip": "43215",
+    "longitude": -83.0033,
+    "address": "139 W Main St"
+  },
+  "photo_url": null,
+  "attendees_count": 3,
+  "end": "2020-05-21 10:08:53",
+  "creator": 38149,
+  "chapter_name": "Team RWB Columbus OH",
+  "name": "Training event ",
+  "chapter_id": 8585,
+  "host": {
+    "first_name": "Dan2",
+    "email": "danellman+test0002@retronyms.com",
+    "is_eagle_leader": true,
+    "title": "Testing Title",
+    "photo_url": "https://teamrwbstage.wpengine.com/wp-content/uploads/2020/04/1586980296-1-150x150.jpg",
+    "last_name": "Ellman2",
+    "id": 38149
+  },
+  "status": "In Progress",
+  "links": null,
+  "id": 78,
+  "chapter_hosted": false,
+  "start": "2020-05-21 08:08:50",
+  "description": "A social event! "
+}

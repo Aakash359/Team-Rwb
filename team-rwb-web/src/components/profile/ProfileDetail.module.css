@@ -1,0 +1,191 @@
+/* Profile Detail View */
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 8px 40px;
+}
+
+.navigation button {
+  /* this may not always work with our custom svgs. they sometimes expect props to set color, etc. */
+  color: var(--magenta);
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.navigation button:hover {
+  background-color: var(--grey40);
+}
+
+.contentContainer {
+  width: 100%;
+  padding: 40px;
+  border-bottom: 2px solid var(--grey8);
+}
+
+.inlineContainer {
+  display: flex;
+  align-items: center;
+  white-space: pre-wrap;
+}
+
+.followsYouText {
+  font-style: italic;
+}
+
+.eagleLeaderText {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.userImageContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  color: var(--navy);
+  font-size: 24px;
+}
+
+.profileActions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 40px 0;
+}
+.followCount {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.followCount:last-child {
+  border-left: 1px var(--grey20) solid;
+}
+
+.followCount strong {
+  font-size: 26px;
+  color: var(--navy);
+}
+
+.editButton {
+  flex-grow: 1;
+  flex-basis: 18%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--magenta);
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'OpenSans-Extrabold';
+  font-size: 18px;
+}
+
+.editButton:hover {
+  cursor: pointer;
+}
+
+.editButtonClicked {
+  color: #ffffff;
+}
+
+.followButton {
+  flex-grow: 1;
+  flex-basis: 18%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey40);
+  border: 1px solid var(--grey40);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'OpenSans-Extrabold';
+  font-size: 18px;
+}
+
+.followButtonFollowed {
+  color: var(--white);
+  background-color: var(--magenta);
+}
+
+.followButton:active,
+.followButton:hover,
+.editButton:hover,
+.editButton:active {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.followButtonClicked {
+  background-color: var(--magenta);
+  color: white;
+}
+
+.followButtonClicked:hover {
+  background-color: #ad234a;
+}
+
+.followButtonClicked:active {
+  background-color: var(--magenta);
+}
+
+.editButton svg,
+.followButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+a.showMoreLink {
+  font-family: 'OpenSans-Semibold';
+  color: var(--magenta);
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+.nameContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.workoutContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.stat {
+  font-style: italic;
+  font-size: 38px;
+}
+
+.statName {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.badgeStatLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

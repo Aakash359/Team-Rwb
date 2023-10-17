@@ -1,0 +1,284 @@
+/* Font Import */
+@font-face {
+  font-family: 'ChangaOne-Italic';
+  src: url(../../assets/fonts/ChangaOne-Italic.ttf);
+}
+@font-face {
+  font-family: 'ChangaOne';
+  src: url(../../assets/fonts/ChangaOne.ttf);
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../../assets/fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: 'OpenSans-Extrabold';
+  src: url(../../assets/fonts/OpenSans-Extrabold.ttf);
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url(../../assets/fonts/OpenSans-Semibold.ttf);
+}
+@font-face {
+  font-family: 'OpenSans-SemiboldItalics';
+  src: url(../../assets/fonts/OpenSans-SemiboldItalic.ttf);
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../../assets/fonts/OpenSans.ttf);
+}
+
+strong,
+b {
+  font-family: 'OpenSans-Bold';
+}
+
+/* Colors */
+:root {
+  --white: white;
+  --whiteOpacity85: rgba(255, 255, 255, 0.85);
+  --navy: #041e42;
+  --magenta: #bf0d3e;
+  --magenta80: #cc3d65;
+  --grey: #63666a;
+  --grey80: #828588;
+  --grey40: #c1c2c3;
+  --grey20: #e0e0e1;
+  --grey8: #f3f3f3;
+  --grey5: #f7f7f8;
+  --blue: #3367b0;
+  --greySilver: #c8c8c8;
+  --gold: #f0c534;
+}
+
+/* Global Styling */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--grey);
+  background-color: var(--grey8);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.App {
+  margin: 0 auto;
+  max-width: 1064px;
+  background-color: var(--white);
+  height: 100%;
+  min-height: 100vh;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.fullScreenContainer {
+  width: 100%;
+  max-width: 625px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+/* Typography */
+.title {
+  font-family: 'OpenSans-Bold';
+  font-size: 22px;
+  line-height: 22px;
+  color: var(--white);
+}
+
+.titleSubheader {
+  font-family: 'OpenSans-Bold';
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+h1 {
+  font-family: 'ChangaOne-Italic';
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--navy);
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'OpenSans-Bold';
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--navy);
+}
+h3 {
+  font-family: 'OpenSans-Bold';
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--navy);
+}
+h4 {
+  font-family: 'OpenSans-Extrabold';
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+h5 {
+  font-family: 'OpenSans-SemiboldItalics';
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--magenta);
+}
+h6 {
+  font-family: 'OpenSans';
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--grey);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.eventListTitle {
+  font-family: 'ChangaOne-Italic';
+  font-size: 20px;
+  color: var(--navy);
+  text-transform: uppercase;
+}
+.bodyCopy {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--grey);
+  margin-bottom: 10px;
+}
+.bodyCopyForm {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  color: var(--grey);
+}
+.filterText {
+  font-family: 'OpenSans-Semibold';
+  font-size: 16px;
+}
+.legalHeader {
+  font-family: 'OpenSans';
+  text-align: center;
+  font-size: 22px;
+  color: var(--magenta);
+}
+.legalSubheader {
+  font-family: 'OpenSans';
+  text-align: center;
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.legalBodyCopy {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.legalBodySection {
+  font-family: 'OpenSans-Semibold';
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--navy);
+}
+.link {
+  font-family: 'OpenSans-Semibold';
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--magenta);
+}
+.date {
+  font-family: 'ChangaOne';
+  font-size: 62px;
+  line-height: 62px;
+  color: var(--navy);
+  text-transform: uppercase;
+}
+.navItem {
+  font-family: 'OpenSans-Bold';
+  font-size: 22px;
+  line-height: 60px;
+}
+.formInput {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+}
+.formLabel {
+  font-family: 'OpenSans-Bold';
+  font-size: 12px;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+.radioFormLabel {
+  font-family: 'OpenSans-Bold';
+  font-size: 12px;
+  color: var(--grey);
+  margin-bottom: 5px;
+}
+.errorMessage {
+  font-family: 'OpenSans-Bold';
+  font-size: 12px;
+  line-height: 11px;
+  color: var(--magenta);
+  text-transform: uppercase;
+}
+.filterCounter {
+  font-family: 'ChangaOne';
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--navy);
+  text-transform: uppercase;
+}
+.namesAndObjects {
+  font-family: 'OpenSans-Bold';
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--navy);
+}
+.edited {
+  color: var(--gray20);
+  font-style: italic;
+}
+
+.modalContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transform: translateX(-363px);
+  background-color: white;
+  max-width: 1064px;
+  animation: modal 0.5s;
+  z-index: 2;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  /* Global */
+  .App {
+    padding-left: 0;
+    width: 100%;
+  }
+  .fullScreenContainer {
+    width: 100%;
+  }
+
+  /* Typography */
+  .navItem {
+    font-family: 'OpenSans-Bold';
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  border-color: var(--grey8);
+  position: relative;
+  padding-left: 363px;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+.searchContainer {
+  width: 100%;
+  padding: 25px 40px;
+  background: var(--magenta);
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    margin-bottom: 80px;
+  }
+
+  .searchContainer {
+    padding: 25px;
+  }
+}

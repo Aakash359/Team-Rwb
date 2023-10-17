@@ -1,0 +1,52 @@
+.attendeesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.attendeesContainer img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  margin-right: -10px;
+}
+
+.attendees {
+  display: flex;
+}
+
+.attendeesCount {
+  display: flex;
+  align-items: center;
+  color: var(--magenta);
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.attendeesCountIcon {
+  color: var(--magenta);
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.attendeesCount svg {
+  width: 30px;
+  height: 30px;
+  margin-left: -5px;
+}
+
+@media only screen and (max-width: 660px) {
+  /* to fix exceeding members from a container, on mobile devices */
+  .attendeesContainer img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+  }
+
+  .attendeesCount {
+    margin-left: 10px;
+  }
+}

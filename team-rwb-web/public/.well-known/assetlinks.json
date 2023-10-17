@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "site": "https://teamrwb.org",
+      "namespace": "android_app",
+      "package_name": "com.teamrwb",
+      "sha256_cert_fingerprints": [
+        "91:E3:E0:86:BB:F9:8E:8A:FE:BC:FD:A3:66:4D:0B:B9:31:89:EC:72:8B:35:BD:34:87:47:3D:97:BB:2B:AE:E4"
+      ]
+    }
+  }
+]

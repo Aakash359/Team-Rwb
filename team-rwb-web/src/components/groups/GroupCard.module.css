@@ -1,0 +1,39 @@
+.container {
+  margin: 0 4px;
+}
+
+.container:last-child {
+  padding-right: 26px;
+}
+
+.containerHorizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.favoritesPhoto {
+  width: '80%';
+  height: 240px;
+}
+
+.textContainerSearch {
+  margin-left: 16px;
+}
+
+.name {
+  white-space: normal;
+  width: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container:last-child {
+    padding-right: 16px;
+  }
+}

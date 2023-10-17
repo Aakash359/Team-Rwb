@@ -1,0 +1,27 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  max-width: 1064px;
+  animation: modal 0.5s;
+  z-index: 2;
+}
+
+@keyframes modal {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 25px 40px 25px;
+  max-width: 625px;
+  overflow: auto;
+}

@@ -1,0 +1,51 @@
+/* RWB Button */
+
+.button {
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: 'center';
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+.primary {
+  background: var(--magenta);
+  font-family: 'OpenSans-Extrabold';
+  text-transform: uppercase;
+  color: var(--white);
+}
+.primaryDisabled {
+  background: var(--grey20);
+  font-family: 'OpenSans-Extrabold';
+  text-transform: uppercase;
+  color: var(--grey);
+  cursor: default;
+}
+.secondary {
+  background: var(--grey20);
+  font-family: 'OpenSans-Semibold';
+  color: var(--grey);
+}
+.tertiary {
+  background: var(--white);
+  font-family: 'OpenSans-Semibold';
+  color: var(--grey);
+}
+.default {
+  background: 'black';
+  font-family: 'OpenSans-Semibold';
+  color: var(--white);
+}
+.button:hover {
+  opacity: 0.8;
+}
+.primaryDisabled:hover {
+  opacity: 1;
+}
+.disabledLink {
+  pointer-events: none;
+}

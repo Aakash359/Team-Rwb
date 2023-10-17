@@ -1,0 +1,41 @@
+/* Attendees And Followed Users */
+
+.imageNotFirst {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-left: -10px;
+  border: 1px solid white;
+}
+
+.imageFirst {
+  margin-left: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+.imagesContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.imagesContainer p {
+  color: var(--magenta);
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.followingAttendeesContainer {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 660px) {
+  .imagesContainer img:nth-of-type(n + 6) {
+    display: none;
+  }
+}

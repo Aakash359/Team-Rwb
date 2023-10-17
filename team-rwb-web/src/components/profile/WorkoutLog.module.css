@@ -1,0 +1,33 @@
+.rootContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  max-width: 1064px;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+.workoutListContainer {
+  margin: 40px 40px 20px 40px;
+}
+
+.workoutCardWrapper {
+  margin-bottom: 20px;
+}
+
+.emptyListContainer {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .rootContainer {
+    transform: translateX(-363px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .workoutListContainer {
+    margin: 20px 20px 0px 20px;
+  }
+}

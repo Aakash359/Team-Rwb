@@ -1,0 +1,50 @@
+.userImageContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contentContainer {
+  width: 100%;
+  padding: 40px;
+  border-bottom: 2px solid var(--grey8);
+}
+
+.rowButton {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.etsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.etsContainer > div {
+  width: 30%;
+}
+
+.preferredChapterContainer {
+  margin: 20px 0px;
+  border-bottom: var(--grey40) 2px solid; /* Used for the temporary change */
+}
+
+/* Used for the temporary change */
+.label {
+  font-family: 'OpenSans';
+  font-size: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .contentContainer {
+    padding: 20px;
+  }
+
+  .userImageContainer {
+    padding-bottom: 10px;
+  }
+}

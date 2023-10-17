@@ -1,0 +1,92 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    max-width: 1064px;
+    animation: modal 0.5s;
+    z-index: 2;
+}
+
+@keyframes modal {
+    from {
+        left: 100vh;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+.root {
+    flex-grow: 1;
+}
+
+.menuButton {
+    color: var(--white);
+}
+
+.title {
+    color: var(--white);
+        text-transform: capitalize;
+        font-family: OpenSans-Bold;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+}
+
+.toolbar {
+    position: relative;
+        justify-content: space-between;
+        background-color: var(--magenta);
+}
+
+.dangerIconWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    color: white;
+        text-transform: capitalize;
+}
+
+.verticalMargin {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.password {
+    margin-top: 25px;
+        margin-bottom: 25px;
+}
+
+.tintColor {
+    color: #bf0d3e;
+}
+
+.privacyPolicyLabel {
+    margin: 0 auto;
+        color: var(--magenta);
+        cursor: pointer;
+        margin-top: 25px;
+}
+
+.contentContainer {
+    margin: 0 auto;
+    padding: 25px 40px;
+    width: 100%;
+    max-width: 625px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    .contentContainer {
+        padding: 25px;
+    }
+}

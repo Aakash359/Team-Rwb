@@ -1,0 +1,33 @@
+.container p {
+  padding: 25px 40px;
+}
+
+.sectionItem {
+  margin: 0 36px 20px 36px;
+}
+
+.sectionItem:last-child {
+  margin: 0 36px 0 36px;
+}
+
+.emptyContainer {
+  height: 60px;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container p {
+    padding: 25px;
+  }
+
+  .sectionItem {
+    margin: 0 20px 20px 20px;
+  }
+
+  .sectionItem:last-child {
+    margin: 0 20px;
+  }
+}

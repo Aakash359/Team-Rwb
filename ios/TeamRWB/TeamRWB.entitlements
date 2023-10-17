@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.applesignin</key>
+	<array>
+		<string>Default</string>
+	</array>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:www.teamrwb.org</string>
+		<string>activitycontinuation:www.teamrwb.org</string>
+		<string>applinks:teamrwbstage.wpengine.com</string>
+		<string>activitycontinuation:teamrwbstage.wpengine.com</string>
+		<string>applinks:teamrwbdev.wpengine.com</string>
+		<string>activitycontinuation:teamrwbdev.wpengine.com</string>
+		<string>applinks:members-staging.teamrwb.org</string>
+		<string>activitycontinuation:members-staging.teamrwb.org</string>
+		<string>applinks:members.teamrwb.org</string>
+		<string>activitycontinuation:members.teamrwb.org</string>
+	</array>
+</dict>
+</plist>

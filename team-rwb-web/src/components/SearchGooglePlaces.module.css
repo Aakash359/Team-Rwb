@@ -1,0 +1,60 @@
+/* Search Bar */
+
+.container {
+  position: relative;
+  width: 100%;
+}
+.searchBar {
+  width: 100%;
+  outline: none;
+  line-height: 50px;
+  padding: 0 20px 0 50px;
+  border-radius: 500px;
+  border: none;
+}
+.noLeftRadius {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: 1px solid var(--grey20);
+  padding: 0 10px;
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.iconRight {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.clearSearch {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.persistentClearSearch {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.searchBar:focus {
+  color: black;
+  padding: 0 50px;
+}
+.noLeftRadius:focus {
+  padding: 0 10px;
+}
+/* TODO: Clear search to appear if the search input has any value and onclick to clear/reset */
+.searchBar:focus ~ .clearSearch {
+  display: block;
+}
+
+.hideClear {
+  display: block;
+}

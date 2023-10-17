@@ -1,0 +1,81 @@
+.container {
+  /* border-color: var(--grey5); */
+  position: relative;
+  height: 100%;
+  border-bottom: transparent;
+  border: 0;
+}
+
+.userContainer {
+  height: 120px;
+  border-bottom: 1px solid var(--grey20);
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: initial;
+}
+
+.userContainer:hover,
+.userContainer:active {
+  background-color: var(--grey5);
+  cursor: pointer;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+}
+
+.profileImg {
+  width: 78px;
+  height: 78px;
+  border-radius: 39px;
+}
+
+.textContainer {
+  height: 100%;
+  padding: 16px 0px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.inlineContainer {
+  display: flex;
+  align-items: center;
+}
+
+.eagleLeaderText {
+  font-style: italic;
+}
+
+.starIcon {
+  color: var(--magenta);
+  font-size: 24px;
+}
+
+.followContainer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--magenta);
+  width: 100px;
+  padding: 15px;
+  font-family: 'OpenSans-Bold';
+  font-size: 16px;
+  line-height: 15px;
+  color: var(--white);
+}
+
+.unFollowContainer {
+  background-color: var(--grey20);
+  color: var(--grey);
+}
+
+.loadingContainer {
+  height: 60px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

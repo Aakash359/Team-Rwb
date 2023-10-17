@@ -1,0 +1,151 @@
+/* Event View */
+
+.searchContainer {
+  width: 100%;
+  padding: 25px 40px;
+  background: var(--magenta);
+  display: flex;
+  flex-direction: row;
+}
+
+.filterContainer {
+  width: 100%;
+  padding: 20px 40px;
+  background: var(--grey5);
+}
+
+.container {
+  border-color: var(--grey8);
+  position: relative;
+  padding-left: 363px;
+  height: 100%;
+}
+
+.nonPaddingContainer {
+  padding-left: 0px;
+}
+
+.eventListContainer {
+  min-height: calc(100vh - 305px);
+  height: 100%;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-bottom: 22px;
+  }
+
+  .searchContainer {
+    padding: 25px;
+  }
+
+  .eventListContainer {
+    margin-bottom: 10px;
+  }
+}
+
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.challengeTabsContainer {
+  display: flex;
+}
+
+.challengeTab {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-bottom: 1px solid #f4f3f3;
+  border-left: 1px solid #f4f3f3;
+  cursor: pointer;
+  color: #828589;
+}
+
+.challengeTabActive {
+  border-bottom: 5px solid #d2003b;
+  cursor: default;
+}
+
+.challengeTabTitle {
+  font-weight: 900;
+}
+
+.challengeTabTitleActive {
+  color: #d2003b;
+  margin-bottom: -4px;
+}
+
+.sectionHeader {
+  margin-top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: var(--grey);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-bottom: 110px;
+  }
+}
+
+
+/* added */
+/* .container {
+  border-color: var(--grey8);
+  position: relative;
+  padding-left: 363px;
+  height: 100%;
+} */
+
+.eventsTabsContainer {
+  display: flex;
+}
+
+.eventsTab {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-bottom: 1px solid #f4f3f3;
+  border-left: 1px solid #f4f3f3;
+  cursor: pointer;
+  color: #828589;
+}
+
+.eventsTabActive {
+  border-bottom: 5px solid #d2003b;
+  cursor: default;
+}
+
+.eventsTabTitle {
+  font-weight: 900;
+}
+
+.eventsTabTitleActive {
+  color: #d2003b;
+  margin-bottom: -4px;
+}
+
+.sectionHeader {
+  margin-top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: var(--grey);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-bottom: 110px;
+  }
+}

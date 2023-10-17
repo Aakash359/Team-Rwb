@@ -1,0 +1,64 @@
+/* FeedListItem */
+
+.container {
+  padding: 20px 40px;
+  border-bottom: 2px solid var(--grey8);
+  display: flex;
+  align-items: center;
+}
+.container:hover,
+.container:active {
+  background-color: var(--grey5);
+  cursor: pointer;
+}
+.textContainer {
+  /* to make the profile image completely rounded, on mobile devices */
+  max-width: 65%;
+}
+.userImageContainer {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.followContainer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--magenta);
+  width: 100px;
+  padding: 15px;
+  font-family: 'OpenSans-Bold';
+  font-size: 16px;
+  line-height: 15px;
+  color: var(--white);
+  position: absolute;
+  right: 40px;
+}
+.unFollowContainer {
+  background-color: var(--grey20);
+  color: var(--grey);
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .userImageContainer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .followContainer {
+    right: 20px;
+    width: 80px;
+    font-size: 14px;
+  }
+}

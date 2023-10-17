@@ -1,0 +1,54 @@
+.badgeStatLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userBadgesContainer {
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.badgeImg {
+  width: 100px;
+  height: 100px;
+  margin-right: 16px;
+  background-size: contain;
+}
+
+.emptyBadgeContainer {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.emptyBadgeText {
+  color: var(--navy);
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.emptyBadgeLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sampleBadge {
+  background-color: var(--grey20);
+  border-radius: 5px;
+  height: 64px;
+  margin-right: -30px;
+}
+
+.sampleBadgeOutline {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+
+.sampleBadgeOutline :first {
+  padding-left: 0;
+}

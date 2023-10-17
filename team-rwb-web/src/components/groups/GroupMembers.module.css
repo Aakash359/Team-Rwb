@@ -1,0 +1,24 @@
+.searchContainer {
+  margin: 25px 40px;
+  display: flex;
+  background: white;
+  flex-direction: row;
+  border: 2px solid var(--grey20);
+  border-radius: 40px;
+}
+
+.searchLabel {
+  text-align: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-bottom: 22px;
+  }
+
+  .searchContainer {
+    margin: 25px;
+  }
+}

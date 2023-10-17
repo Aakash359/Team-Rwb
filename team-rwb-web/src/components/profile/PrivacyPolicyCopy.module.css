@@ -1,0 +1,24 @@
+.link {
+  color: var(--magenta);
+}
+.bold {
+  font-weight: bold;
+}
+.item {
+  color: var(--navy);
+}
+.legalHeader {
+  font-family: 'OpenSans';
+  text-align: center;
+  font-size: 16px;
+  color: var(--magenta);
+  margin-bottom: 10px;
+}
+.legalSubheader {
+  font-family: 'OpenSans';
+  text-align: center;
+  font-size: 16px;
+  color: var(--navy);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}

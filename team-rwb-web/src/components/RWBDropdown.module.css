@@ -1,0 +1,18 @@
+/* Dropdown Styling */
+
+.container {
+  margin-bottom: 25px;
+}
+.dropdownContent {
+  margin: 2px 0 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--grey40);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}

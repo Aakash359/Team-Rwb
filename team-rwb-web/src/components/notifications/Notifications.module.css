@@ -1,0 +1,15 @@
+/* Notifications */
+
+.container {
+  border-color: var(--grey8);
+  position: relative;
+  padding-left: 363px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-bottom: 94px;
+  }
+}

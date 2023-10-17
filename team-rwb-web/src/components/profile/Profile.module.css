@@ -1,0 +1,21 @@
+/* Profile View */
+.container {
+  border-color: var(--grey8);
+  position: relative;
+  padding-left: 363px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-bottom: 82px;
+  }
+}
+
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

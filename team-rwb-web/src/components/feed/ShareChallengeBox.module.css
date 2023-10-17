@@ -1,0 +1,33 @@
+.container {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.eventTitle {
+    font-size: 20px;
+  }
+  
+  .eventDate {
+    font-size: 12px;
+    font-family: 'OpenSans-Bold';
+  }
+  
+  .workoutInfoText {
+    font-size: 30px;
+    color: '#63666A';
+  }
+  
+  .workoutInfoLabelText {
+    font-size: 12px;
+    font-family: 'OpenSans-Bold';
+  }
+
+.detailsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}

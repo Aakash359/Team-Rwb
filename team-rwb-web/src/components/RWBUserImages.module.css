@@ -1,0 +1,98 @@
+/* User Profile Images */
+
+.container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+.coverImageContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  background-color: var(--grey40);
+  overflow: hidden;
+}
+.profileImageContainer {
+  position: absolute;
+  right: 40px;
+  bottom: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--grey40);
+  border: 5px solid var(--white);
+}
+.profileImageCrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.coverImageContainer > img,
+.profileImageContainer .profileImageCrop > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.uploadCoverImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--magenta);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.uploadProfileImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--magenta);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.uploadCoverImage label,
+.uploadProfileImage label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hideDefaultUpload {
+  display: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .profileImageContainer {
+    right: 20px;
+    bottom: -30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2.5px solid var(--white);
+  }
+
+  .uploadProfileImage {
+    bottom: 0px;
+    left: 0px;
+  }
+}

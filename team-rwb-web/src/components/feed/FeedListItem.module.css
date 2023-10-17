@@ -1,0 +1,133 @@
+/* FeedListItem */
+
+.container {
+  padding: 20px 40px;
+  border-bottom: 2px solid var(--grey8);
+}
+.container:hover,
+.container:active {
+  background-color: var(--grey5);
+}
+.userActivityContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.userImageContainer {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.profileImage {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sponsorAdminIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.name {
+  cursor: pointer;
+}
+.postText {
+  margin-bottom: 15px;
+}
+.reactionContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.likeContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* .likeContainer:hover {
+  font-weight: bold;
+} */
+.likeIcon {
+  margin-right: 5px;
+}
+.likeIcon:hover,
+.commentsContainer:hover {
+  opacity: 0.6;
+}
+.postImageContainer {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+.postImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.tallContainer {
+  height: 0;
+  padding-top: 125%;
+  border-radius: 10px;
+}
+.tallImage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.deleteButtonContainer {
+  display: flex;
+  flex: 0.8;
+  flex-direction: row-reverse;
+}
+
+.deleteButton {
+  color: var(--magenta);
+  font-weight: 600;
+}
+
+.deleteButton:hover {
+  cursor: pointer;
+}
+
+.imageAndTextContainer {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.commentsContainer {
+  cursor: pointer;
+}
+
+.pinnedPostText {
+  font-family: 'OpenSans-Bold';
+  font-size: 12px;
+  margin-right: 3px;
+  color: var(--magenta);
+  text-transform: uppercase;
+}
+
+.pinnedContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .userImageContainer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .userActivityContainer p {
+    width: 70%;
+  }
+}

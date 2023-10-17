@@ -1,0 +1,75 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transform: translateX(-363px);
+  background-color: #ffffff;
+  max-width: 1064px;
+  animation: modal 0.5s;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+@keyframes modal {
+  from {
+    left: 100vh + 363px;
+  }
+  to {
+    left: 0 - 363px;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 25px 40px 25px;
+  max-width: 625px;
+  height: 100%;
+}
+
+/* Registration Styling */
+
+.contentContainer {
+  margin: 0 auto;
+  padding: 25px 40px;
+  width: 100%;
+  max-width: 625px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.radioForm {
+  margin-top: 30px;
+}
+.buttonContainer {
+  margin-top: 30px;
+}
+.dropdownWrapper {
+  flex: 1;
+}
+
+/* Personal Information */
+.autocompleteItems {
+  padding: 5px 0;
+}
+h3,
+.autocompleteItems p {
+  display: inline;
+}
+.clickable {
+  cursor: pointer;
+}
+.displayNone {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    transform: translateX(0);
+  }
+
+  .contentContainer {
+    padding: 25px;
+  }
+}

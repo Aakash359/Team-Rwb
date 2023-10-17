@@ -1,0 +1,52 @@
+.container {
+  width: 450px;
+  max-width: 70%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: null;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.mainText {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+  margin: 10px 0 10px 10px;
+}
+
+.legendContainer {
+  background-color: var(--grey20);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+}
+
+.legendText {
+  height: 30px;
+  background-color: var(--grey20);
+  width: 150px;
+  max-width: 33%;
+}
+
+.rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px solid var(--grey20);
+}
+
+.rowText {
+  height: 30px;
+  width: 150px;
+  max-width: 33%;
+}

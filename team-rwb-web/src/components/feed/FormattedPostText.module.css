@@ -1,0 +1,14 @@
+.container {
+  align-items: center;
+  margin-bottom: 15px;
+  white-space: pre-wrap;
+  flex-wrap: wrap;
+}
+
+.postText {
+  margin-bottom: 15px;
+}
+
+.fullName {
+  cursor: pointer;
+}

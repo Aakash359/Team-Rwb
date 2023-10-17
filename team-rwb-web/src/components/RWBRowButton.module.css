@@ -1,0 +1,17 @@
+/* RWB Row Button */
+
+.rowButton {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 2px var(--grey8) solid;
+  cursor: pointer;
+}
+
+.label {
+  flex-grow: 2;
+  padding: 0;
+  margin: 0 0 0 10px;
+  line-height: 1.5em;
+  display: inline;
+}

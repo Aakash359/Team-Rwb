@@ -1,0 +1,258 @@
+diff --git a/node_modules/rn-material-ui-textfield/src/components/affix/index.js b/node_modules/rn-material-ui-textfield/src/components/affix/index.js
+index 44330d2..caf4a7e 100644
+--- a/node_modules/rn-material-ui-textfield/src/components/affix/index.js
++++ b/node_modules/rn-material-ui-textfield/src/components/affix/index.js
+@@ -1,3 +1,4 @@
++import { TextPropTypes } from 'deprecated-react-native-prop-types'
+ import PropTypes from 'prop-types'
+ import React, { PureComponent } from 'react'
+ import { Animated, Text } from 'react-native'
+@@ -11,7 +12,8 @@ export default class Affix extends PureComponent {
+ 
+   static propTypes = {
+     numberOfLines: PropTypes.number,
+-    style: Text.propTypes.style,
++    style: TextPropTypes.style,
++    
+ 
+     color: PropTypes.string.isRequired,
+     fontSize: PropTypes.number.isRequired,
+diff --git a/node_modules/rn-material-ui-textfield/src/components/counter/index.js b/node_modules/rn-material-ui-textfield/src/components/counter/index.js
+index 679ca9c..d45a211 100644
+--- a/node_modules/rn-material-ui-textfield/src/components/counter/index.js
++++ b/node_modules/rn-material-ui-textfield/src/components/counter/index.js
+@@ -1,6 +1,7 @@
+ import PropTypes from 'prop-types'
+ import React, { PureComponent } from 'react'
+ import { Text } from 'react-native'
++import { TextPropTypes } from 'deprecated-react-native-prop-types'
+ 
+ import styles from './styles'
+ 
+@@ -12,7 +13,7 @@ export default class Counter extends PureComponent {
+     baseColor: PropTypes.string.isRequired,
+     errorColor: PropTypes.string.isRequired,
+ 
+-    style: Text.propTypes.style,
++    style: TextPropTypes.style,
+   }
+ 
+   render() {
+diff --git a/node_modules/rn-material-ui-textfield/src/components/field/index.js b/node_modules/rn-material-ui-textfield/src/components/field/index.js
+index 2056eba..5e97716 100644
+--- a/node_modules/rn-material-ui-textfield/src/components/field/index.js
++++ b/node_modules/rn-material-ui-textfield/src/components/field/index.js
+@@ -1,6 +1,7 @@
+ import PropTypes from 'prop-types'
+ import React, { PureComponent } from 'react'
+-import { View, Text, TextInput, Animated, StyleSheet, Platform, ViewPropTypes } from 'react-native'
++import { View, Text, TextInput, Animated, StyleSheet, Platform, } from 'react-native'
++import {ViewPropTypes, TextInputPropTypes} from 'deprecated-react-native-prop-types';
+ 
+ import Line from '../line'
+ import Label from '../label'
+@@ -74,9 +75,9 @@ export default class TextField extends PureComponent {
+ 
+     labelOffset: Label.propTypes.offset,
+ 
+-    labelTextStyle: Text.propTypes.style,
+-    titleTextStyle: Text.propTypes.style,
+-    affixTextStyle: Text.propTypes.style,
++    labelTextStyle: TextInputPropTypes.style,
++    titleTextStyle: TextInputPropTypes.style,
++    affixTextStyle: TextInputPropTypes.style,
+ 
+     tintColor: PropTypes.string,
+     textColor: PropTypes.string,
+@@ -221,7 +222,7 @@ export default class TextField extends PureComponent {
+       duration,
+       useNativeDriver: false,
+     }
+-
++    this.forceUpdate();
+     startAnimation(focusAnimation, options, this.onFocusAnimationEnd)
+   }
+ 
+@@ -407,7 +408,6 @@ export default class TextField extends PureComponent {
+   onFocusAnimationEnd() {
+     let { error } = this.props
+     let { error: retainedError } = this.state
+-
+     if (this.mounted && !error && retainedError) {
+       this.setState({ error: null })
+     }
+@@ -440,7 +440,7 @@ export default class TextField extends PureComponent {
+   inputProps() {
+     let store = {}
+ 
+-    for (let key in TextInput.propTypes) {
++    for (let key in TextInputPropTypes) {
+       if (key === 'defaultValue') {
+         continue
+       }
+@@ -482,7 +482,6 @@ export default class TextField extends PureComponent {
+ 
+   renderLabel(props) {
+     let offset = this.labelOffset()
+-
+     let { label, fontSize, labelFontSize, labelTextStyle } = this.props
+ 
+     return (
+@@ -493,6 +492,7 @@ export default class TextField extends PureComponent {
+         offset={offset}
+         label={label}
+         style={labelTextStyle}
++        focused={this.focused}
+       />
+     )
+   }
+diff --git a/node_modules/rn-material-ui-textfield/src/components/field/index.js.rej b/node_modules/rn-material-ui-textfield/src/components/field/index.js.rej
+new file mode 100644
+index 0000000..9e0225a
+--- /dev/null
++++ b/node_modules/rn-material-ui-textfield/src/components/field/index.js.rej
+@@ -0,0 +1,65 @@
++***************
++*** 221,227 ****
++        duration,
++        useNativeDriver: false,
++      }
++- 
++      startAnimation(focusAnimation, options, this.onFocusAnimationEnd)
++    }
++  
++--- 221,227 ----
++        duration,
++        useNativeDriver: false,
++      }
+++     this.forceUpdate();
++      startAnimation(focusAnimation, options, this.onFocusAnimationEnd)
++    }
++  
++***************
++*** 407,413 ****
++    onFocusAnimationEnd() {
++      let { error } = this.props
++      let { error: retainedError } = this.state
++- 
++      if (this.mounted && !error && retainedError) {
++        this.setState({ error: null })
++      }
++--- 407,412 ----
++    onFocusAnimationEnd() {
++      let { error } = this.props
++      let { error: retainedError } = this.state
++      if (this.mounted && !error && retainedError) {
++        this.setState({ error: null })
++      }
++***************
++*** 482,488 ****
++  
++    renderLabel(props) {
++      let offset = this.labelOffset()
++- 
++      let { label, fontSize, labelFontSize, labelTextStyle } = this.props
++  
++      return (
++--- 481,486 ----
++  
++    renderLabel(props) {
++      let offset = this.labelOffset()
++      let { label, fontSize, labelFontSize, labelTextStyle } = this.props
++  
++      return (
++***************
++*** 493,498 ****
++          offset={offset}
++          label={label}
++          style={labelTextStyle}
++        />
++      )
++    }
++--- 491,497 ----
++          offset={offset}
++          label={label}
++          style={labelTextStyle}
+++         focused={this.focused}
++        />
++      )
++    }
+diff --git a/node_modules/rn-material-ui-textfield/src/components/helper/index.js b/node_modules/rn-material-ui-textfield/src/components/helper/index.js
+index 486e367..b8e8356 100644
+--- a/node_modules/rn-material-ui-textfield/src/components/helper/index.js
++++ b/node_modules/rn-material-ui-textfield/src/components/helper/index.js
+@@ -1,6 +1,7 @@
+ import PropTypes from 'prop-types'
+ import React, { PureComponent } from 'react'
+ import { Animated, Text } from 'react-native'
++import { TextPropTypes } from 'deprecated-react-native-prop-types'
+ 
+ import styles from './styles'
+ 
+@@ -9,7 +10,7 @@ export default class Helper extends PureComponent {
+     title: PropTypes.string,
+     error: PropTypes.string,
+     disabled: PropTypes.bool,
+-    style: Text.propTypes.style,
++    style: TextPropTypes.style,
+     baseColor: PropTypes.string,
+     errorColor: PropTypes.string,
+     focusAnimation: PropTypes.instanceOf(Animated.Value),
+diff --git a/node_modules/rn-material-ui-textfield/src/components/label/index.js b/node_modules/rn-material-ui-textfield/src/components/label/index.js
+index 0174819..2299553 100644
+--- a/node_modules/rn-material-ui-textfield/src/components/label/index.js
++++ b/node_modules/rn-material-ui-textfield/src/components/label/index.js
+@@ -1,6 +1,7 @@
+ import PropTypes from 'prop-types'
+ import React, { PureComponent } from 'react'
+ import { Animated, Text } from 'react-native'
++import { TextPropTypes } from 'deprecated-react-native-prop-types'
+ 
+ import styles from './styles'
+ 
+@@ -39,7 +40,7 @@ export default class Label extends PureComponent {
+       y1: PropTypes.number,
+     }),
+ 
+-    style: Text.propTypes.style,
++    style: TextPropTypes.style,
+     label: PropTypes.string,
+   }
+ 
+@@ -109,12 +110,23 @@ export default class Label extends PureComponent {
+       ],
+     }
+ 
++    let labelCopy = label;
++    let requiresCarefulStyles = labelCopy.toLowerCase().includes('minutes') || labelCopy.toLowerCase().includes('hours') || labelCopy.toLowerCase().includes('seconds')
++
+     return (
+-      <Animated.View style={[styles.container, containerStyle]}>
++      <>
++      {this.props.focused || !requiresCarefulStyles
++      ? <Animated.View style={[styles.container, containerStyle]}>
+         <Animated.Text style={[styles.text, style, textStyle]} {...props}>
+           {label}
+         </Animated.Text>
+       </Animated.View>
++      : <Animated.View style={[containerStyle]}>
++      <Animated.Text style={[styles.text, style, textStyle]} {...props}>
++        {label}
++      </Animated.Text>
++    </Animated.View>}
++    </>
+     )
+   }
+ }
+diff --git a/node_modules/rn-material-ui-textfield/src/components/label/styles.js b/node_modules/rn-material-ui-textfield/src/components/label/styles.js
+index 60debfa..b2c2cb1 100644
+--- a/node_modules/rn-material-ui-textfield/src/components/label/styles.js
++++ b/node_modules/rn-material-ui-textfield/src/components/label/styles.js
+@@ -7,6 +7,7 @@ export default StyleSheet.create({
+     left: '-100%',
+     width: '200%',
+     paddingLeft: '50%',
++    textAlign: 'left',
+   },
+ 
+   text: {

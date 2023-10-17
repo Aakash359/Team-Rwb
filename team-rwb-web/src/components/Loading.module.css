@@ -1,0 +1,39 @@
+.loadingContainer {
+  position: fixed; /*changed from absolute. TODO - check if it ruins needed behaviour somewhere*/
+  width: 100%;
+  max-width: 1064px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.notFullLoadingContainer {
+  position: fixed;
+  width: 100%;
+  max-width: 1064px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.none {
+  display: none;
+}
+
+.rightContainer {
+  max-width: 701px;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+}

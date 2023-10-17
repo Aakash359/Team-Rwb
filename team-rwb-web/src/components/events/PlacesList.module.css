@@ -1,0 +1,31 @@
+.container {
+  border-color: var(--grey8);
+  position: relative;
+  height: 100%;
+}
+
+.suggestionContainer {
+  height: 60px;
+  border-bottom: 1px solid var(--grey20);
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.suggestionContainer:hover,
+.suggestionContainer:active {
+  background-color: var(--grey5);
+  cursor: pointer;
+}
+
+.currentLocationText {
+  padding-left: 16px;
+}
+
+.loadingContainer {
+  height: 60px;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

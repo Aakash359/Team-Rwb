@@ -1,0 +1,52 @@
+/* Search Bar */
+
+.container {
+  position: relative;
+  width: 100%;
+}
+.searchBar {
+  width: 100%;
+  outline: none;
+  line-height: 50px;
+  padding: 0 20px 0 50px;
+  border-radius: 500px;
+  border: none;
+}
+.noRightRadius {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-right: 10px;
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.clearSearch {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  height: 24px;
+  cursor: pointer;
+}
+.searchBar:focus {
+  color: black;
+  padding: 0 50px;
+}
+.noRightRadius:focus {
+  padding-right: 10px;
+}
+
+.hideClear {
+  display: none;
+}
+
+.notificationIcon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
